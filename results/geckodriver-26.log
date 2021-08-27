@@ -1,0 +1,17 @@
+1630065239337	geckodriver	INFO	Listening on 127.0.0.1:52186
+1630065242395	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ELTON\\AppData\\Local\\Temp\\rust_mozprofilemjBuvg"
+1630065243075	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ELTON\\AppData\\Local\\Temp\\rust_mozprofilemjBuvg\\search.json.mozlz4", (void 0)))
+1630065247272	Marionette	INFO	Listening on port 63229
+1630065247743	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-W3L5TR8&gtm_auth=&gtm_preview=&gtm_cookies_win=x, line 324: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-W3L5TR8&gtm_auth=&gtm_preview=&gtm_cookies_win=x, line 324: unreachable code after return statement
+JavaScript error: https://www.kabum.com.br/ line 375 > injectedScript, line 1: ReferenceError: _etmc is not defined
+1630065269065	Marionette	INFO	Stopped listening on port 63229
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590004,name=PHttpChannel::Msg_Cancel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+

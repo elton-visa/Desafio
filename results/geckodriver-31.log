@@ -1,0 +1,23 @@
+1630066810041	geckodriver	INFO	Listening on 127.0.0.1:54065
+1630066813129	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ELTON\\AppData\\Local\\Temp\\rust_mozprofilejCGKzx"
+1630066813730	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ELTON\\AppData\\Local\\Temp\\rust_mozprofilejCGKzx\\search.json.mozlz4", (void 0)))
+1630066817979	Marionette	INFO	Listening on port 50131
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390097,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+1630066818521	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-W3L5TR8&gtm_auth=&gtm_preview=&gtm_cookies_win=x, line 324: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-W3L5TR8&gtm_auth=&gtm_preview=&gtm_cookies_win=x, line 324: unreachable code after return statement
+JavaScript error: https://www.kabum.com.br/ line 375 > injectedScript, line 1: ReferenceError: _etmc is not defined
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-W3L5TR8&gtm_auth=&gtm_preview=&gtm_cookies_win=x, line 324: unreachable code after return statement
+JavaScript error: https://www.kabum.com.br/busca?query=Smartphone+Samsung+Galaxy+A70 line 375 > injectedScript, line 1: ReferenceError: _etmc is not defined
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-W3L5TR8&gtm_auth=&gtm_preview=&gtm_cookies_win=x, line 324: unreachable code after return statement
+1630066837735	Marionette	INFO	Stopped listening on port 50131
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590004,name=PHttpChannel::Msg_Cancel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+

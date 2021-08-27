@@ -1,0 +1,17 @@
+1630009871219	geckodriver	INFO	Listening on 127.0.0.1:50663
+1630009874300	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ELTON\\AppData\\Local\\Temp\\rust_mozprofileaex4sM"
+1630009874869	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ELTON\\AppData\\Local\\Temp\\rust_mozprofileaex4sM\\search.json.mozlz4", (void 0)))
+1630009879112	Marionette	INFO	Listening on port 63961
+1630009879622	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-TZWZD26&l=dataLayer, line 300: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-THHLN5V&l=dataLayer, line 347: unreachable code after return statement
+JavaScript error: https://www.casasbahia.com.br/, line 2724: TypeError: Search is undefined
+JavaScript error: https://www.casasbahia.com.br/, line 2751: TypeError: Search is undefined
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-TZWZD26&l=dataLayer, line 300: unreachable code after return statement
+JavaScript error: , line 0: TypeError: ServiceWorker script at https://www.casasbahia.com.br/akam-sw.js for scope https://www.casasbahia.com.br/ encountered an error during installation.
+1630009893355	Marionette	INFO	Stopped listening on port 63961
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390076,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+

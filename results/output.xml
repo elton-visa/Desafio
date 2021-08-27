@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.5 on win32)" generated="20210827 09:39:08.352" rpa="false" schemaversion="2">
+<suite id="s1" name="Cenarios" source="D:\Desafio\testes\Cenarios.robot">
+<test id="s1-t1" name="Pesquisar produto 01">
+<kw name="Abrir navegador" library="Resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210827 09:39:08.805" level="INFO">Opening browser 'firefox' to base url 'https://www.kabum.com.br/'.</msg>
+<msg timestamp="20210827 09:39:08.805" level="INFO">Firefox driver log is always forced to to: D:\Desafio\results\geckodriver-37.log</msg>
+<status status="PASS" starttime="20210827 09:39:08.805" endtime="20210827 09:39:23.117"/>
+</kw>
+<status status="PASS" starttime="20210827 09:39:08.805" endtime="20210827 09:39:23.117"/>
+</kw>
+<kw name="Verificar se a página foi carregada" library="Resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>KaBuM! | Maior E-commerce de Tecnologia e Games da América Latina</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20210827 09:39:23.137" level="INFO">Page title is 'KaBuM! | Maior E-commerce de Tecnologia e Games da América Latina'.</msg>
+<status status="PASS" starttime="20210827 09:39:23.121" endtime="20210827 09:39:23.138"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=#input-busca</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210827 09:39:23.138" endtime="20210827 09:39:24.022"/>
+</kw>
+<status status="PASS" starttime="20210827 09:39:23.120" endtime="20210827 09:39:24.022"/>
+</kw>
+<kw name="Digitar o produto &quot;Smartphone Samsung Galaxy A70&quot;" library="Resource" sourcename="Digitar o produto &quot;${PRODUTO}&quot;">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=input-busca</arg>
+<arg>${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210827 09:39:24.024" level="INFO">Typing text 'Smartphone Samsung Galaxy A70' into text field 'id=input-busca'.</msg>
+<status status="PASS" starttime="20210827 09:39:24.024" endtime="20210827 09:39:24.589"/>
+</kw>
+<status status="PASS" starttime="20210827 09:39:24.023" endtime="20210827 09:39:24.589"/>
+</kw>
+<kw name="Clicar no botão pesquisar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=#barraBuscaKabum &gt; div &gt; form &gt; button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210827 09:39:24.596" level="INFO">Clicking element 'css=#barraBuscaKabum &gt; div &gt; form &gt; button'.</msg>
+<status status="PASS" starttime="20210827 09:39:24.595" endtime="20210827 09:39:31.712"/>
+</kw>
+<status status="PASS" starttime="20210827 09:39:24.594" endtime="20210827 09:39:31.713"/>
+</kw>
+<kw name="Conferir se o produto Smartphone Samsung Galaxy A70 foi localizado" library="Resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>KaBuM! | Maior E-commerce de Tecnologia e Games da América Latina</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20210827 09:39:31.724" level="INFO">Page title is 'KaBuM! | Maior E-commerce de Tecnologia e Games da América Latina'.</msg>
+<status status="PASS" starttime="20210827 09:39:31.719" endtime="20210827 09:39:31.725"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=#input-busca</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210827 09:39:31.725" endtime="20210827 09:39:31.761"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=#listingBreadcrumbs</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210827 09:39:31.762" endtime="20210827 09:39:31.787"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="listing"]/article/section/div[2]//img[@src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/157825/Smartphone-Samsung-Galaxy-A72-128GB-6GB-Ram-Tela-6-7-Preto_1629404352_m.jpg"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210827 09:39:31.787" endtime="20210827 09:39:31.808"/>
+</kw>
+<status status="PASS" starttime="20210827 09:39:31.717" endtime="20210827 09:39:31.808"/>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210827 09:39:31.809" endtime="20210827 09:39:33.380"/>
+</kw>
+<status status="PASS" starttime="20210827 09:39:31.809" endtime="20210827 09:39:33.380"/>
+</kw>
+<status status="PASS" starttime="20210827 09:39:08.805" endtime="20210827 09:39:33.380"/>
+</test>
+<test id="s1-t2" name="Pesquisar produto 02">
+<kw name="Abrir navegador" library="Resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210827 09:39:33.396" level="INFO">Opening browser 'firefox' to base url 'https://www.kabum.com.br/'.</msg>
+<msg timestamp="20210827 09:39:33.396" level="INFO">Firefox driver log is always forced to to: D:\Desafio\results\geckodriver-38.log</msg>
+<status status="PASS" starttime="20210827 09:39:33.380" endtime="20210827 09:39:52.988"/>
+</kw>
+<status status="PASS" starttime="20210827 09:39:33.380" endtime="20210827 09:39:52.988"/>
+</kw>
+<kw name="Verificar se a página foi carregada" library="Resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>KaBuM! | Maior E-commerce de Tecnologia e Games da América Latina</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20210827 09:39:53.008" level="INFO">Page title is 'KaBuM! | Maior E-commerce de Tecnologia e Games da América Latina'.</msg>
+<status status="PASS" starttime="20210827 09:39:52.991" endtime="20210827 09:39:53.008"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=#input-busca</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210827 09:39:53.009" endtime="20210827 09:39:53.056"/>
+</kw>
+<status status="PASS" starttime="20210827 09:39:52.990" endtime="20210827 09:39:53.056"/>
+</kw>
+<kw name="Digitar o produto &quot;Smartphone Motorola One Vision&quot;" library="Resource" sourcename="Digitar o produto &quot;${PRODUTO}&quot;">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=input-busca</arg>
+<arg>${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210827 09:39:53.062" level="INFO">Typing text 'Smartphone Motorola One Vision' into text field 'id=input-busca'.</msg>
+<status status="PASS" starttime="20210827 09:39:53.061" endtime="20210827 09:39:53.146"/>
+</kw>
+<status status="PASS" starttime="20210827 09:39:53.060" endtime="20210827 09:39:53.146"/>
+</kw>
+<kw name="Clicar no botão pesquisar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=#barraBuscaKabum &gt; div &gt; form &gt; button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210827 09:39:53.147" level="INFO">Clicking element 'css=#barraBuscaKabum &gt; div &gt; form &gt; button'.</msg>
+<status status="PASS" starttime="20210827 09:39:53.147" endtime="20210827 09:39:54.285"/>
+</kw>
+<status status="PASS" starttime="20210827 09:39:53.146" endtime="20210827 09:39:54.285"/>
+</kw>
+<kw name="Conferir se o produto Smartphone Motorola One Vision foi localizado" library="Resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>KaBuM! | Maior E-commerce de Tecnologia e Games da América Latina</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20210827 09:39:54.302" level="INFO">Page title is 'KaBuM! | Maior E-commerce de Tecnologia e Games da América Latina'.</msg>
+<status status="PASS" starttime="20210827 09:39:54.292" endtime="20210827 09:39:54.302"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=#input-busca</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210827 09:39:54.302" endtime="20210827 09:39:54.560"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=#listingBreadcrumbs</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210827 09:39:54.561" endtime="20210827 09:39:55.552"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="listing"]/article/section/div[2]/div/main/div[3]/a/img[@src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/205284/Smartphone-Motorola-One-Vision-128Gb-Bronze-XT1970-1_1628706916_m.jpg"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210827 09:39:55.552" endtime="20210827 09:39:55.585"/>
+</kw>
+<status status="PASS" starttime="20210827 09:39:54.290" endtime="20210827 09:39:55.585"/>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210827 09:39:55.588" endtime="20210827 09:39:57.192"/>
+</kw>
+<status status="PASS" starttime="20210827 09:39:55.587" endtime="20210827 09:39:57.192"/>
+</kw>
+<status status="PASS" starttime="20210827 09:39:33.380" endtime="20210827 09:39:57.193"/>
+</test>
+<test id="s1-t3" name="Pesquisar produto 03">
+<kw name="Abrir navegador" library="Resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210827 09:39:57.197" level="INFO">Opening browser 'firefox' to base url 'https://www.kabum.com.br/'.</msg>
+<msg timestamp="20210827 09:39:57.200" level="INFO">Firefox driver log is always forced to to: D:\Desafio\results\geckodriver-39.log</msg>
+<status status="PASS" starttime="20210827 09:39:57.196" endtime="20210827 09:40:14.193"/>
+</kw>
+<status status="PASS" starttime="20210827 09:39:57.195" endtime="20210827 09:40:14.193"/>
+</kw>
+<kw name="Verificar se a página foi carregada" library="Resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>KaBuM! | Maior E-commerce de Tecnologia e Games da América Latina</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20210827 09:40:14.205" level="INFO">Page title is 'KaBuM! | Maior E-commerce de Tecnologia e Games da América Latina'.</msg>
+<status status="PASS" starttime="20210827 09:40:14.193" endtime="20210827 09:40:14.205"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=#input-busca</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210827 09:40:14.205" endtime="20210827 09:40:14.253"/>
+</kw>
+<status status="PASS" starttime="20210827 09:40:14.193" endtime="20210827 09:40:14.253"/>
+</kw>
+<kw name="Digitar o produto &quot;Smartphone Xiaomi Redmi Note 9&quot;" library="Resource" sourcename="Digitar o produto &quot;${PRODUTO}&quot;">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=input-busca</arg>
+<arg>${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210827 09:40:14.253" level="INFO">Typing text 'Smartphone Xiaomi Redmi Note 9' into text field 'id=input-busca'.</msg>
+<status status="PASS" starttime="20210827 09:40:14.253" endtime="20210827 09:40:14.349"/>
+</kw>
+<status status="PASS" starttime="20210827 09:40:14.253" endtime="20210827 09:40:14.353"/>
+</kw>
+<kw name="Clicar no botão pesquisar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=#barraBuscaKabum &gt; div &gt; form &gt; button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210827 09:40:14.353" level="INFO">Clicking element 'css=#barraBuscaKabum &gt; div &gt; form &gt; button'.</msg>
+<status status="PASS" starttime="20210827 09:40:14.353" endtime="20210827 09:40:15.466"/>
+</kw>
+<status status="PASS" starttime="20210827 09:40:14.353" endtime="20210827 09:40:15.466"/>
+</kw>
+<kw name="Conferir se o produto Smartphone Xiaomi Redmi Note 9 foi localizado" library="Resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>KaBuM! | Maior E-commerce de Tecnologia e Games da América Latina</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20210827 09:40:15.470" level="INFO">Page title is 'KaBuM! | Maior E-commerce de Tecnologia e Games da América Latina'.</msg>
+<status status="PASS" starttime="20210827 09:40:15.466" endtime="20210827 09:40:15.470"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=#input-busca</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210827 09:40:15.470" endtime="20210827 09:40:15.750"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=#listingBreadcrumbs</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210827 09:40:15.750" endtime="20210827 09:40:17.010"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="listing"]/article/section/div[2]/div/main/div[1]/a/img[@src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/117881/Smartphone-Xiaomi-Redmi-Note-9-Processador-Octa-Core-2-0GHz-4GB-Ram-128GB-C-mera-Quad-48-8-2-2-MP-Tela-de-6-53-Cinza-Vers-o-Global_1629481142_m.jpg"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210827 09:40:17.010" endtime="20210827 09:40:17.061"/>
+</kw>
+<status status="PASS" starttime="20210827 09:40:15.466" endtime="20210827 09:40:17.061"/>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210827 09:40:17.063" endtime="20210827 09:40:18.694"/>
+</kw>
+<status status="PASS" starttime="20210827 09:40:17.062" endtime="20210827 09:40:18.694"/>
+</kw>
+<status status="PASS" starttime="20210827 09:39:57.195" endtime="20210827 09:40:18.694"/>
+</test>
+<status status="PASS" starttime="20210827 09:39:08.352" endtime="20210827 09:40:18.709"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Cenarios">Cenarios</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
